@@ -1,0 +1,49 @@
+// 🦊 LAPSA'S FOX RICE - WAYBAR CONFIG
+{
+    "height": 30, 
+    "spacing": 4, 
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": [
+        "pulseaudio",
+        "network", 
+        "cpu",
+        "memory",
+        "backlight",
+        "battery",
+        "clock",
+        "tray",
+        "custom/power"
+    ],
+
+    "pulseaudio": {
+        "format": "{volume}% ",
+        "format-muted": "",
+        "on-click": "pavucontrol"
+    },
+
+    "network": {
+        "format-wifi": "{essid} ",
+        "format-ethernet": "Connected ",
+        "format-disconnected": "Disconnected ⚠"
+    },
+
+    "cpu": { "format": "{usage}% " },
+
+    "memory": { "format": "{}% " },
+
+    "backlight": { "format": "{percent}% " },
+
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "clock": { "format": "{:%H:%M} " },
+
+    "custom/power": {
+        "format": "⏻ ",
+        "on-click": "wlogout" 
+    }
+}

@@ -1,0 +1,27 @@
+/* --- [ SECTION: GLOBAL STYLE ] --- */
+* {
+    font-family: "FiraCode Nerd Font", "Symbols Nerd Font", sans-serif;
+    font-size: 13px;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* --- [ SECTION: THE FOX PILLS ] --- */
+#clock, #battery, #cpu, #memory, #backlight, #pulseaudio, #network, #tray {
+    background-color: rgba(69, 49, 28, 0.85); /* Fox Brown */
+    color: #ffb86c;                          /* Fox Orange */
+    border-radius: 15px;
+    padding: 2px 12px;
+    margin: 4px 4px;
+    border: 1px solid rgba(255, 184, 108, 0.2);
+}
+
+#custom-power {
+    background-color: rgba(250, 112, 0, 0.2);
+    color: #fa7000;
+    border-radius: 50%;
+    padding: 0 10px;
+    margin-left: 5px;
+}

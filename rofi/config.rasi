@@ -1,0 +1,79 @@
+configuration {
+    /* --- [ SECTION: GENERAL SETTINGS ] --- */
+    modi: "drun";
+    show-icons: true;
+    display-drun: "Search";        /* Removed emoji as requested */
+    drun-display-format: "{name}";
+    terminal: "kitty";
+
+    /* --- [ SECTION: SLOW SCROLL & BEHAVIOR ] --- */
+    scroll-method: 0;             /* Continuous linear scrolling */
+    cycle: false;                 /* Stop scrolling at the end of the list */
+    hover-select: true;           /* Select items by hovering */
+    
+    /* Force line-by-line scrolling instead of page jumping */
+    me-select-entry: "";          
+    me-accept-entry: "MousePrimary";
+    mouse-wheel-up: "ScrollUp";   /* Fixed fast scroll by forcing 'Scroll' over 'Page' */
+    mouse-wheel-down: "ScrollDown";
+}
+
+/* --- [ SECTION: FOX THEME COLORS ] --- */
+* {
+    bg: #2a1e12;           /* Deep Fox Brown */
+    fg: #ffb86c;           /* Soft Fox Orange */
+    accent: #fa7000;       /* Vibrant Orange */
+    
+    background-color: transparent;
+    text-color: @fg;
+    margin: 0;
+    padding: 0;
+    font: "FiraCode Nerd Font 11";
+}
+
+/* --- [ SECTION: WINDOW LAYOUT ] --- */
+window {
+    width: 35%;
+    border: 2px;
+    border-color: @accent;
+    border-radius: 15px;
+    background-color: @bg;
+    padding: 20px;
+}
+
+entry {
+    placeholder: "Type to filter...";
+    placeholder-color: #69451c;
+    padding: 10px;
+    text-color: @fg;
+}
+
+listview {
+    lines: 8;
+    columns: 1;
+    fixed-height: true;
+    scrollbar: false;
+    spacing: 5px;
+    padding: 10px 0;
+}
+
+/* --- [ SECTION: ELEMENT STYLING ] --- */
+element {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: @bg;
+}
+
+element-icon {
+    size: 24px;
+    padding: 0 10px 0 0;
+}
+
+element-text {
+    vertical-align: 0.5;
+    text-color: inherit;
+}
