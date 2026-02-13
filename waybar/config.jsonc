@@ -1,4 +1,4 @@
-// 🦊 LAPSA'S FOX RICE - WAYBAR CONFIG
+// 🦊 FOX RICE - WAYBAR CONFIG
 {
     "height": 30, 
     "spacing": 4, 
@@ -44,6 +44,6 @@
 
     "custom/power": {
         "format": "⏻ ",
-        "on-click": "wlogout" 
+        "on-click": "hyprctl dispatch exit 0" 
     }
 }
