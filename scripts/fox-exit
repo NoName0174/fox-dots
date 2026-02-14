@@ -1,0 +1,15 @@
+#!/bin/bash
+
+SELECTION=$(printf "󰌾 Lock
+󰍃 Logout
+󰐥 Shutdown
+󰜉 Reboot
+󰤄 Suspend" | fuzzel --dmenu --width=20 --lines=5 --background-color=1e1e2eff --text-color=ff9500ff --selection-color=ff9500ff --selection-text-color=1e1e2eff --border-color=ff9500ff --border-width=2)
+
+case "$SELECTION" in
+    *Lock) swaylock ;;
+    *Logout) loginctl terminate-user $USER ;;
+    *Shutdown) systemctl poweroff ;;
+    *Reboot) systemctl reboot ;;
+    *Suspend) systemctl suspend ;;
+esac
