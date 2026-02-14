@@ -43,7 +43,8 @@
     "clock": { "format": "{:%H:%M} " },
 
     "custom/power": {
-        "format": "⏻ ",
-        "on-click": "hyprctl dispatch exit 0" 
-    }
+    	"format": "⏻",
+   	"on-click": "/home/lapsa/.local/bin/fox-exit",
+   	"tooltip": false
+    },
 }
