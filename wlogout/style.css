@@ -1,0 +1,30 @@
+window {
+    background-color: rgba(0, 0, 0, 0.5); /* Dim the rest of the screen */
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    border: none;
+    background-color: rgba(30, 30, 46, 0); /* Make button box invisible */
+    box-shadow: none;
+    text-shadow: none;
+    color: #e11111; /* Thinkpad Red - No more pink! */
+    font-family: "JetBrainsMono Nerd Font"; /* Matches your CachyOS/Fox style */
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: rgba(225, 17, 17, 0.2); /* Soft red glow on hover */
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* These link the icons back to the buttons */
+#lock { background-image: image(url("/usr/share/wlogout/icons/lock.png")); }
+#logout { background-image: image(url("/usr/share/wlogout/icons/logout.png")); }
+#suspend { background-image: image(url("/usr/share/wlogout/icons/suspend.png")); }
+#hibernate { background-image: image(url("/usr/share/wlogout/icons/hibernate.png")); }
+#shutdown { background-image: image(url("/usr/share/wlogout/icons/shutdown.png")); }
+#reboot { background-image: image(url("/usr/share/wlogout/icons/reboot.png")); }
